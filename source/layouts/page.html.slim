@@ -1,0 +1,18 @@
+doctype html
+html lang="ja" prefix=("og: http://ogp.me/ns# fb: http://www.facebook.com/2008/fbml")
+  head
+    = partial "partials/meta"
+
+  body.page_classes
+    = partial "partials/nav"
+    header#header
+      .container
+        .row
+          .columns.medium-7
+            h1
+              a href="/"
+                | Title
+    section#content
+      = yield
+
+    = partial "partials/footer"

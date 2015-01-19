@@ -1,0 +1,22 @@
+doctype html
+html lang="ja" prefix=("og: http://ogp.me/ns# fb: http://www.facebook.com/2008/fbml")
+  head
+    = partial "partials/meta"
+
+  body class=page_classes
+    #fb-root
+    javascript:
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.0&appId=160952450707602";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+
+    = partial "partials/nav"
+
+    section#content
+      = yield
+
+    = partial "partials/footer"

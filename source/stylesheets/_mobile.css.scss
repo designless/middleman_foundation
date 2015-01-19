@@ -1,0 +1,50 @@
+/* ==========================================
+MOBILE
+========================================== */
+body {
+  -webkit-text-size-adjust: 100%;
+}
+
+.iPhone,
+.android {
+  padding-top: 150px !important;
+}
+
+.iPhone .pc,
+.android .pc {
+  display: none !important;
+}
+
+.sp {
+  display: none;
+}
+
+.iPhone .sp,
+.android .sp {
+  display: block !important;
+}
+
+.iPhone .movie,
+.android .movie {
+  padding: 200px 0 200px;
+}
+
+.iPhone .basic-key,
+.android .basic-key {
+  padding: 200px 0 200px;
+}
+
+.tablet .device-bg,
+.iPad.device-bg {
+  -webkit-background-size: cover !important;
+  background-size: cover !important;
+  height: 742px !important;
+}
+
+.iPhone .device-bg,
+.android .device-bg {
+  -webkit-background-size: cover !important;
+  background-size: cover !important;
+  top: 150px;
+  height: 742px !important;
+}

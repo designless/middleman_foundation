@@ -1,0 +1,66 @@
+// EXTEND
+%clearfix {
+  &:before, &:after {
+    display: table;
+    content: "";
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+%hidden-text {
+  text-indent: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  a {
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+// BUTTON
+@mixin btn-submit($color) {
+  border-radius: 5px;
+  display: inline-block;
+  margin: 0 auto;
+  background: $color;
+  text-align: center;
+  color: #fff;
+  padding: 10px 30px;
+  position: relative;
+  box-shadow: 0 5px 0 0 darken($color, 20%);
+  transition: all 0.1s;
+  top: 0px;
+  &:hover {
+    top: 5px;
+    box-shadow: 0 0 0 0 darken($color, 20%);
+  }
+}
+
+// CENTER
+@mixin block-center {
+  margin: 0 auto;
+  float: none;
+  position: relative;
+}
+
+// LINK
+@mixin link-color-lighten($color) {
+  &:link, &:visited {
+    color: $color;
+  }
+  &:hover, &:active, &:focus {
+    color: lighten($color, 10%);
+  }
+}
+
+@mixin link-color-darken($color) {
+  &:link, &:visited {
+    color: $color;
+  }
+  &:hover, &:active, &:focus {
+    color: darken($color, 10%);
+  }
+}
