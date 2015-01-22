@@ -3,6 +3,7 @@
 //= require "fastclick/lib/fastclick"
 //= require "jquery.easing-1.3.pack"
 //= require "jquery.biggerlink.min"
+//= require "jquery.heightLine"
 //= require "jquery-smooth-scroll/jquery.smooth-scroll.min"
 
 
