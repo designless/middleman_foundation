@@ -39,6 +39,7 @@
 // $body-bg: #fff;
 // $body-font-color: #222;
 $body-font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+$serif: "Times New Roman", "游明朝", YuMincho, "Hiragino Mincho ProN", Meiryo, serif;
 
 // $body-font-weight: normal;
 // $body-font-style: normal;
@@ -66,8 +67,7 @@ $success-color: #43AC6A;
 $warning-color: #f08a24;
 $info-color: #a0d3e8;
 $gray: #fafafa;
-$wood: url(/images/bg-wood2.jpg);
-$fabric: url(/images/fabric_plaid2.jpg);
+$dark-gray: #666;
 
 // width
 $innerwidth1: 800px;
