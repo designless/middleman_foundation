@@ -24,7 +24,6 @@
 @mixin btn-submit($color) {
   border-radius: 5px;
   display: inline-block;
-  margin: 0 auto;
   background: $color;
   text-align: center;
   color: #fff;
@@ -36,6 +35,24 @@
   &:hover {
     top: 5px;
     box-shadow: 0 0 0 0 darken($color, 20%);
+  }
+}
+
+@mixin btn-ghost($color) {
+  border-radius: 25px;
+  height: 50px;
+  line-height: 50px;
+  display: inline-block;
+  padding: 0 30px;
+  border: 2px solid $color;
+  text-align: center;
+  color: #fff;
+  background: $red;
+  transition: all 0.1s;
+  top: 0px;
+  &:hover {
+    background: #fff;
+    color: $color;
   }
 }
 
