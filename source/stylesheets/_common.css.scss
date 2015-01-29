@@ -35,7 +35,6 @@ body {
   white-space: nowrap;
 }
 
-
 .mb0 {
   margin: 0px !important;
 }
@@ -62,13 +61,13 @@ body {
   background: $gray;
 }
 
-
 a {
   -webkit-transition: all .25s ease-out;
   -moz-transition: all .25s ease-out;
   -ms-transition: all .25s ease-out;
   -o-transition: all .25s ease-out;
   transition: all .25s ease-out;
+  text-decoration: none;
   &:hover {
     color: $red;
   }
@@ -76,7 +75,7 @@ a {
 
 [class^="fa"]:before,
 [class*=" fa-"]:before {
-  margin-right: 3px;
+  margin-right: 2px;
 }
 
 ul, ol {
@@ -96,10 +95,6 @@ img {
 }
 
 // side
-nav {
-  font-family: 'Ropa Sans', sans-serif;
-}
-
 .nav-text {
   font-size: .7rem;
   float: right;
