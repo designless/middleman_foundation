@@ -134,7 +134,7 @@ configure :build do
     }
   })
 
-  activate :minify_html
+  activate :minify_html, remove_http_protocol: false
 
   # activate :imageoptim do |options|
     # print out skipped images
