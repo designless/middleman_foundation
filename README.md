@@ -101,6 +101,13 @@ $bundle exec middleman build
 * ビルド時に、改行などをとってファイルを軽量化
 * HTML / CSS / JavaScript対応
 
+## その他の使い方
+middlemanを複数起動する
+= port番号（任意）を指定してサーバーを立ち上げる
+
+```
+$bundle exec middleman --port=7777
+```
 
 
 
