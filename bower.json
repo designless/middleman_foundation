@@ -1,9 +1,9 @@
 {
-  "name": "foundation-compass-app",
+  "name": "middleman-foundation",
   "version": "0.0.1",
   "private": "true",
   "dependencies": {
     "foundation": "zurb/bower-foundation",
-    "font-awesome": "~4.2.0"
+    "jquery-smooth-scroll": "~1.5.4"
   }
 }

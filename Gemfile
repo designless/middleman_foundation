@@ -14,6 +14,8 @@ gem 'puma'
 
 gem 'rake'
 
+gem 'font-awesome-sass'
+
 gem "middleman-minify-html"
 
 gem "middleman-livereload"
