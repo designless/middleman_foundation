@@ -3,16 +3,17 @@ html lang="ja" prefix=("og: http://ogp.me/ns# fb: http://www.facebook.com/2008/f
   head
     = partial "partials/meta"
 
-  body.page_classes
+  body class=page_classes
     = partial "partials/nav"
+
     header#header
-      .container
-        .row
-          .columns.medium-7
-            h1
-              a href="/"
-                | Title
-    section#content
+      .row
+        .columns.medium-7
+          h1
+            a href="/"
+              | Title
+
+    div#content
       = yield
 
     = partial "partials/footer"

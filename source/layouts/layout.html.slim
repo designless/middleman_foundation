@@ -16,7 +16,9 @@ html lang="ja" prefix=("og: http://ogp.me/ns# fb: http://www.facebook.com/2008/f
 
     = partial "partials/nav"
 
-    section#content
+    = partial "partials/keyvisual"
+
+    #content
       = yield
 
     = partial "partials/footer"
