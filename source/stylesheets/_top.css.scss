@@ -1,99 +1,17 @@
-#top {
-  -webkit-background-size: cover;
-  background-size: cover;
-  -webkit-text-size-adjust: 100%;
-}
-
-.container {
-  @extend %clearfix;
-}
-
-#header {
-  @extend %clearfix;
-  background: #fff;
-  padding: 8px 0 20px;
-  h1 {
-    margin-right: 0;
-    font-size: 1em;
-    padding-top: 13px;
-    strong {
-      margin-left: 10px;
-      font-size: 10px;
-      color: #fff;
-      font-weight: normal;
-    }
-  }
-  .header-nav {
-    text-align: right;
-    margin-right: 0;
-    padding-top: 10px;
-  }
-}
-
-.header-scroll {
-  background: rgba($blue, 0.7);
-}
-
-#nav {
-  margin-right: 0;
-  ul {
-    @extend %clearfix;
-    padding-top: 13px;
-    float: right;
-  }
-  li {
-    margin-right: 20px;
-    float: left;
-    margin-right: 20px;
-    letter-spacing: 2px;
-    font-size: 12px;
-    &:last-child {
-      margin-right: 0;
-    }
-  }
-  .nav-entry {
-    background: $red;
-    color: #fff;
-    padding: 2px 10px;
-    a {
-      @include link-color-darken(#fff);
-    }
-  }
-  a {
-    @include link-color-darken(#fff);
-  }
-}
-
 
 #key-visual {
   min-height: 630px;
   padding-bottom: 20px;
+  background: #fafafa;
 }
-@media #{$small-only} {
+  @media #{$small-only} {
   #key-visual {
     min-height: 400px;
   }
 }
 
-.social-btn {
-  @extend %clearfix;
-  li {
-    float: left;
-    margin-right: 10px;
-  }
-
-  li:last-child {
-    margin-right: 0;
-  }
-
-  .gplus {
-    padding-top: 5px;
-    width: 60px;
-  }
-  .twitter {
-    padding-top: 5px;
-    width: 80px;
-  }
+#content {
+  padding: 40px 0;
 }
 
 #entry {
@@ -104,29 +22,15 @@
 
 // footer
 footer {
-  border-top: 1px solid #999;
   padding-top: 10px;
-  background: #fff;
   font-size: .7rem;
   padding-bottom: 40px;
-  .columns {
-    padding-top: 10px;
-  }
   li {
     float: left;
     margin-right: 20px;
-    a {
-      color: #777 !important;
-    }
-  }
-  span {
-  }
-  .footer-nav {
-    font-size: .7rem;
   }
   .copyright {
     text-align: right;
-    line-height: 1;
   }
 }
 
